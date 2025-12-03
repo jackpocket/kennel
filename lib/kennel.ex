@@ -11,7 +11,7 @@ defmodule Kennel                                                                
       :error
 
   """
-  def include_error_metadata(error_level, config) do
+  def include_error_metadata(log_event, config) do
     Kennel.Filter.include_error_metadata(error_level, config)
   end
 end
