@@ -55,6 +55,13 @@ defmodule Kennel.Filter do
 
   def include_error_metadata(log_event, _), do: log_event
 
+  defp msg_from_translated_log(%{msg: {:report, report}}) do
+    case report[:elixir_translation] do
+      nil -> "Error! check the log"
+      translation -> to_string(translation)
+    end
+  end
+
   defp msg_from_translated_log(%{msg: {:string, message}}) do
     to_string(message)
   end
