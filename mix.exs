@@ -1,7 +1,7 @@
 defmodule Kennel.MixProject do
   use Mix.Project
 
-  @version "0.1.1"
+  @version "0.1.2"
   @source_url "https://github.com/jackpocket/kennel"
 
   def project do
@@ -40,7 +40,7 @@ defmodule Kennel.MixProject do
       name: "kennel",
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/jackpocket/kennel"},
-      files: ["lib", "mix.exs", "README.md", "LICENSE"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE.md"],
       maintainers: ["Todd Resudek", "Rudolph Manusadzhian"]
     ]
   end
